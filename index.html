@@ -5,18 +5,36 @@
     <meta httsp-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babahoyo</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <video id="background" autoplay muted loop playsinline>
+        <source src="video/intro.mp4" type="video/mp4" />
+    </video>
+    <div id="nav-container">
         <nav>
+            <div id="logo"><img src="img/logo_center.png"></div>
             <ul>
-                <li>Home</li>
-                <li>Historia</li>
-                <li>Gastronomia</li>
-                <li>Turismo</li>
+                <li><input id="hom" type="button" value="Home"/></li>
+                <li><input id="his" type="button" value="Historia"/></li>
+                <li><input id="gas" type="button" value="Gastronomia"/></li>
+                <li><input id="tur" type="button" value="Turismo"/></li>
             </ul>
         </nav>
     </div>
+    <aside id="asi" class="animation-run">
+        <div id="p1"></div>
+        <div id="p2"></div>
+        <div id="p3"></div>
+        <div id="p4"></div>
+    </aside>
+   <footer>
+    <div id="footer-container">
+        <a class="icon-facebook2" href="https://www.facebook.com/alcaldiadebabahoyo"></a>
+        <a class="icon-twitter" href="https://twitter.com/alcaldiabbhy?lang=es"></a>
+        <a class="icon-youtube" href="https://www.youtube.com/channel/UCoB9_L1I0sBgf6DaSTJ_7gg/featured"></a>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
