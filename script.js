@@ -11,7 +11,6 @@ for (const key in buts) {
     const but = buts[key];
     but.addEventListener("click",(e)=>{
         from=to;
-        //asi.classList.remove("animation-run");
         switch (e.target.value) {
             case "Home":
                 to=0;
