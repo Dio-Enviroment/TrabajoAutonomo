@@ -4,13 +4,15 @@ gas=document.getElementById("gas"),
 tur=document.getElementById("tur"),
 asi=document.getElementById("asi")];
 
-let from=0;
-to=0;
+let from=0,
+to=0,
+target=buts[0];
 
 for (const key in buts) {
     const but = buts[key];
     but.addEventListener("click",(e)=>{
         from=to;
+        e.target.className="nav-container-select";
         switch (e.target.value) {
             case "Home":
                 to=0;
@@ -28,7 +30,6 @@ for (const key in buts) {
                 to=-75;
                 break;
         }
-        console.log(`from: ${from} to: ${to}`);
         document.documentElement.style.setProperty('--start-animation', `${from}%`);
         document.documentElement.style.setProperty('--end-animation', `${to}%`);
         asi.style.animation = 'none';
